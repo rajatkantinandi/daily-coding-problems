@@ -18,7 +18,7 @@ int main()
   }
   printf("Enter the value of K: ");
   scanf("%d", &k);
-  if (k > 1 && n > 0)
+  if (k > 0 && n > 1)
   {
     if (match(arr, k, n))
     {
@@ -29,6 +29,7 @@ int main()
       printf("The array doesn't contain 2 elements summing up to K=%d\n", k);
     }
   }
+  return 0;
 }
 bool match(int *arr, int k, int n)
 {
